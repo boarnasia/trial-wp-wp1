@@ -9,7 +9,7 @@ wp1 (WordPress 7) の開発用リポジトリ。公開 URL は https://local.wp1
 wp-main から開発セッションとして起動する（`uv run manage.py devenv install` 済みであること）。
 
 ```bash
-cd ../wp-main && uv run manage.py serve --site=wp1   # Ctrl-C で終了し、サイトも止まる
+cd ../wp-main && uv run manage.py serve up --site=wp1 --detach   # 終えるときは uv run manage.py serve down
 ```
 
 デバッグ用ポートで直接確認する場合（ホスト名とポートが `WP_HOME` と違うため、ヘッダーを付ける）:
